@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import CssBaseline from '@material-ui/core/CssBaseline'
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+
+import { Welcome } from './components/forFun'
+import Skills from './components/skillList'
+import Projects from './components/projects'
+import Npm from './components/npmPackages'
+import Contact from './components/contact'
+import Landing from './components/landing'
+
+const theme = createMuiTheme({
+	palette: {
+		text: {
+			primary: '#DCE1DE',
+			secondary: '#9CC5A1',
+		},
+		primary: {
+			main: '#49A078',
+		},
+		secondary: {
+			main: '#216869',
+		},
+		background: {
+			paper: '#1F2421',
+			default: '#1F2421',
+		},
+	},
+})
+// [theme.breakpoints.down('sm')]: { },
+// [theme.breakpoints.between('sm','md')]: { },
+// [theme.breakpoints.between('md','lg')]: { },
+// [theme.breakpoints.up('xl')]: { },
+
+export default function App() {
+	return (
+		<>
+			<ThemeProvider theme={theme}>
+				<CssBaseline />
+				<Grid container className='App'>
+					{Welcome()}
+					<Landing />
+					<Skills />
+					<Projects />
+					<Npm />
+					<Contact />
+				</Grid>
+			</ThemeProvider>
+		</>
+	)
 }
-
-export default App;
