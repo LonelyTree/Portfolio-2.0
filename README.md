@@ -1,5 +1,5 @@
-TODO:
+###Hello and welcome to my porfolio's github page!
 
-1. Add Python notebooks
-2. Responsive Website
+_Thank you for visiting, and I hope you like what you see._
 
+_-Alex_

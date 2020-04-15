@@ -29,6 +29,11 @@ const theme = createMuiTheme({
 		},
 	},
 })
+
+// TODO:
+
+// 1. Add Python notebooks
+// 2. Responsive Website
 // [theme.breakpoints.down('sm')]: { },
 // [theme.breakpoints.between('sm','md')]: { },
 // [theme.breakpoints.between('md','lg')]: { },
