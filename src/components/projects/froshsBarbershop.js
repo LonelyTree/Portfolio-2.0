@@ -13,10 +13,9 @@ const BarberShop = () => {
 			</div>
 			<p className={classes.para}>
 				The main page for a family run barber shop. I created the logo using
-				Canva and Adobe Photoshop as well as Adobe Illustrator. The page is
-				styled with React Springs and SASS. Utilizing unSplash for royalty free
-				images I was able to capture the essence of this quaint, but immensely
-				popular barbershop.
+				Canva and Adobe Photoshop. The page is styled with React Spring and
+				SASS. Utilizing UnSplash for royalty free images, I was able to capture
+				the essence of this quaint, but immensely popular barbershop.
 			</p>
 			{FroshsBarbershopImages()}
 			<h1 className={classes.utilized}>UTILIZED</h1>

@@ -8,6 +8,7 @@ import Scifi from './scienceSwitch'
 import PNMixy from './mixy'
 import BarberShop from './froshsBarbershop'
 import Contagion from './contagion'
+import AppliedBionics from './appliedBionics'
 import { mainStyles } from './mainStyles'
 
 export default function Projects() {
@@ -16,6 +17,20 @@ export default function Projects() {
 		<div className={classes.projectWrapper}>
 			<h1 className={classes.header}>PROJECTS</h1>
 			<div className={classes.projectContainer}>
+				<ExpansionPanel className={classes.expansion}>
+					<ExpansionPanelSummary
+						expandIcon={<ExpandMoreIcon />}
+						aria-controls='panel1a-content'
+						classes={{ expanded: classes.expanded }}
+					>
+						<Typography className={classes.heading}>
+							Applied Bionics Demo
+						</Typography>
+					</ExpansionPanelSummary>
+					<ExpansionPanelDetails>
+						<AppliedBionics />
+					</ExpansionPanelDetails>
+				</ExpansionPanel>
 				<ExpansionPanel className={classes.expansion}>
 					<ExpansionPanelSummary
 						expandIcon={<ExpandMoreIcon />}

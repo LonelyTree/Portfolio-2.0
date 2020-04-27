@@ -116,7 +116,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		header: {
 			color: theme.palette.primary.main,
-			marginTop: '20%',
+			marginTop: '10%',
 			fontSize: '4vw',
 		},
 		contactBy: {
@@ -174,7 +174,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		header: {
 			color: theme.palette.primary.main,
-			marginTop: '20%',
+			marginTop: '13%',
 			fontSize: '4vw',
 		},
 		contactBy: {

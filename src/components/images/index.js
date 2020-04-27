@@ -1,12 +1,6 @@
 import React from 'react'
 import Contagion1 from '../../img/contagionControlMapMini.png'
 import Contagion2 from '../../img/contagionControlMenuMini.png'
-import Global1 from '../../img/globalMenuMini.png'
-import Global2 from '../../img/globalTitleMini.png'
-import Neuro1 from '../../img/neuroDromeGameMini.png'
-import Neuro2 from '../../img/neuroDromeMenuMini.png'
-import SafeLa1 from '../../img/safeParkingMenuMini.png'
-import SafeLa2 from '../../img/safeParkingSearchMini.png'
 import Scifi1 from '../../img/scifiMenu.png'
 import Scifi2 from '../../img/scifiAction.png'
 import Frosh1 from '../../img/FroshsMain.png'
@@ -14,40 +8,41 @@ import Frosh2 from '../../img/FroshsContact.png'
 import Mixy1 from '../../img/mixyTop.png'
 import Mixy2 from '../../img/mixyBottom.png'
 import Lorem1 from '../../img/loremMemesum.png'
+import Bionics1 from '../../img/appliedBionics1.png'
+import Bionics2 from '../../img/appliedBionics2.png'
 import { useStyles } from './styles'
 import Grid from '@material-ui/core/Grid'
 
-export const GlobalImages = () => {
-	const classes = useStyles()
-	return (
-		<div className='imgholder'>
-			<div className='img1'>
-				<img
-					className='imgsrc'
-					src={Global1}
-					rel='preload'
-					name='Global1'
-					alt='Global Main Menu'
-				/>
-				<a href='https://github.com/LonelyTree/GLOBAL'>
-					<p className={classes.links}>GITHUB</p>
-				</a>
-			</div>
-			<div className='img2'>
-				<img
-					className='imgsrc'
-					src={Global2}
-					rel='preload'
-					alt='Global Main Page'
-				/>
-				<a href='https://lonelytree.github.io/GLOBAL/'>
-					<p className={classes.links}>LIVE</p>
-				</a>
-			</div>
-		</div>
-	)
-}
-
+// export const GlobalImages = () => {
+// 	const classes = useStyles()
+// 	return (
+// 		<div className='imgholder'>
+// 			<div className='img1'>
+// 				<img
+// 					className='imgsrc'
+// 					src={Global1}
+// 					rel='preload'
+// 					name='Global1'
+// 					alt='Global Main Menu'
+// 				/>
+// 				<a href='https://github.com/LonelyTree/GLOBAL'>
+// 					<p className={classes.links}>GITHUB</p>
+// 				</a>
+// 			</div>
+// 			<div className='img2'>
+// 				<img
+// 					className='imgsrc'
+// 					src={Global2}
+// 					rel='preload'
+// 					alt='Global Main Page'
+// 				/>
+// 				<a href='https://lonelytree.github.io/GLOBAL/'>
+// 					<p className={classes.links}>LIVE</p>
+// 				</a>
+// 			</div>
+// 		</div>
+// 	)
+// }
 export const ContagionImages = () => {
 	const classes = useStyles()
 	return (
@@ -79,60 +74,61 @@ export const ContagionImages = () => {
 		</Grid>
 	)
 }
-export const NeuroDromeImages = () => {
-	const classes = useStyles()
-	return (
-		<Grid container className={classes.imgHolder}>
-			<div className='img1'>
-				<a href='https://github.com/LonelyTree/NEURO_DROME'>
-					<img
-						className={classes.imgSource}
-						src={Neuro1}
-						alt='Neuro Drome arena'
-					/>
-				</a>
-				<a href='https://github.com/LonelyTree/NEURO_DROME'>
-					<p className={classes.links}>GITHUB</p>
-				</a>
-			</div>
-			<div className='img2'>
-				<a href='https://lonelytree.github.io/NEURO_DROME/'>
-					<img
-						className={classes.imgSource}
-						src={Neuro2}
-						alt='Neuro Drome Main Page'
-					/>
-				</a>
-				<a href='https://lonelytree.github.io/NEURO_DROME/'>
-					<p className={classes.links}>LIVE</p>
-				</a>
-			</div>
-		</Grid>
-	)
-}
-export const SafeLAImages = () => {
-	const classes = useStyles()
-	return (
-		<div className='imgholder'>
-			<div className='img1'>
-				<img className='imgsrc' src={SafeLa1} alt='Safe Parking Menu' />
-				<a href='https://github.com/LonelyTree/Safe-Parking-LA'>
-					<p className={classes.links}>GITHUB</p>
-				</a>
-			</div>
-			<div className='img2'>
-				<img
-					className='imgsrc'
-					src={SafeLa2}
-					alt='Safe Parking Search Function'
-				/>
-				<a href='https://lonelytree.github.io/Safe-Parking-LA/'>
-					<p className={classes.links}>LIVE</p>
-				</a>
-			</div>
-		</div>
-	)
-}
+// export const NeuroDromeImages = () => {
+// 	const classes = useStyles()
+// 	return (
+// 		<Grid container className={classes.imgHolder}>
+// 			<div className='img1'>
+// 				<a href='https://github.com/LonelyTree/NEURO_DROME'>
+// 					<img
+// 						className={classes.imgSource}
+// 						src={Neuro1}
+// 						alt='Neuro Drome arena'
+// 					/>
+// 				</a>
+// 				<a href='https://github.com/LonelyTree/NEURO_DROME'>
+// 					<p className={classes.links}>GITHUB</p>
+// 				</a>
+// 			</div>
+// 			<div className='img2'>
+// 				<a href='https://lonelytree.github.io/NEURO_DROME/'>
+// 					<img
+// 						className={classes.imgSource}
+// 						src={Neuro2}
+// 						alt='Neuro Drome Main Page'
+// 					/>
+// 				</a>
+// 				<a href='https://lonelytree.github.io/NEURO_DROME/'>
+// 					<p className={classes.links}>LIVE</p>
+// 				</a>
+// 			</div>
+// 		</Grid>
+// 	)
+// }
+
+// export const SafeLAImages = () => {
+// 	const classes = useStyles()
+// 	return (
+// 		<div className='imgholder'>
+// 			<div className='img1'>
+// 				<img className='imgsrc' src={SafeLa1} alt='Safe Parking Menu' />
+// 				<a href='https://github.com/LonelyTree/Safe-Parking-LA'>
+// 					<p className={classes.links}>GITHUB</p>
+// 				</a>
+// 			</div>
+// 			<div className='img2'>
+// 				<img
+// 					className='imgsrc'
+// 					src={SafeLa2}
+// 					alt='Safe Parking Search Function'
+// 				/>
+// 				<a href='https://lonelytree.github.io/Safe-Parking-LA/'>
+// 					<p className={classes.links}>LIVE</p>
+// 				</a>
+// 			</div>
+// 		</div>
+// 	)
+// }
 export const ScifiImages = () => {
 	const classes = useStyles()
 	return (
@@ -240,6 +236,37 @@ export const LoremMemesum = () => {
 				</a>
 				<a href='https://github.com/LonelyTree/Lorem-Memesum#readme'>
 					<p className={classes.links}>GITHUB</p>
+				</a>
+			</div>
+		</Grid>
+	)
+}
+export const AppliedBionicsImages = () => {
+	const classes = useStyles()
+	return (
+		<Grid container className={classes.imgHolder}>
+			<div className='img1'>
+				<a href='https://github.com/LonelyTree/Applied-Bionics'>
+					<img
+						className={classes.imgSource}
+						src={Bionics1}
+						alt='Applied Bionics Top'
+					/>
+				</a>
+				<a href='https://github.com/LonelyTree/Applied-Bionics'>
+					<p className={classes.links}>GITHUB</p>
+				</a>
+			</div>
+			<div className='img2'>
+				<a href='https://lonelytree.github.io/Applied-Bionics/'>
+					<img
+						className={classes.imgSource}
+						src={Bionics2}
+						alt='Applied Bionics Bottom'
+					/>
+				</a>
+				<a href='https://lonelytree.github.io/Applied-Bionics/'>
+					<p className={classes.links}>LIVE</p>
 				</a>
 			</div>
 		</Grid>

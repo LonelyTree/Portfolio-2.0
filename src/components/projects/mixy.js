@@ -21,7 +21,7 @@ const PNMixy = () => {
 				<h2 className={classes.header}>Party Night Mixy</h2>
 			</div>
 			<p className={classes.para}>
-				A fun little app for creating new and exciting cocktails with you and
+				A fun little app for creating new and exciting cocktails for you and
 				your friends!
 			</p>
 			{MixyImages()}
